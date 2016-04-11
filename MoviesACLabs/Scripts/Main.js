@@ -39,6 +39,10 @@ prevb.addEventListener('click', function () {
     prev = --next;
     if (prev < 0) {
         prev = 0;
+   
+
     }
+    
     document.getElementById("imgs").src = imgss[prev];
+    }
 });
