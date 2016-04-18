@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body ng-app="Start" ng-controller="add">
+
+    <p>ToDo list:</p>
+
+
+
+    <form ng-submit="submit()">
+
+        <input ng-model="todoList" id="input1" type="text" placeholder="enter item..." />
+
+
+        <button ng-click="addTodo()" type="button" id="b1">Add!</button>
+
+        <ul>
+            <li ng-repeat="t in todos">
+                {{t}}
+                <input type="checkbox" style="margin-left:20px;">Completed<br /><button type="button" id="b2">Remove!</button>
+            </li>
+        </ul>
+
+    </form>
+
+
+
+    <br />
+    <p style="margin-left:20px;">we have {{todos.length}} items</p>
+    <br />
+    <button type="button" id="b3" style="margin-left:20px;">All</button>
+    <button type="button" id="b4" style="margin-left:20px;">Completed</button>
+    <button type="button" id="b5" style="margin-left:20px;">Active</button>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="Scripts/lab4.js"></script>
+</body>
+</html>

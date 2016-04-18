@@ -105,7 +105,9 @@
     <Content Include="Global.asax" />
     <Content Include="Index.html" />
     <Content Include="lab3.html" />
+    <Content Include="lab4.html" />
     <Content Include="Scripts\jquery-1.12.3.js" />
+    <Content Include="Scripts\lab4.js" />
     <Content Include="Scripts\Main.js" />
     <Content Include="Scripts\Main2.js" />
     <Content Include="Styles\Screen.css" />
